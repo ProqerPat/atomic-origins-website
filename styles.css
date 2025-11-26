@@ -1,0 +1,41 @@
+.badeen-display-regular {
+    font-family: "Badeen Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    /* Makes it so when you zoom out the table stays centered, but still to the left of the background */
+    display: flex;
+    justify-content: center;
+
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #17192b;
+    color: #f5fbff;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin-right: 500px;
+    border-collapse: collapse;
+    background-color: #1f1f1fff;
+}
+
+td {
+    padding: 0;
+    /* vertical-align: top; */
+}
+
+p {
+    font-size: 34px;
+    margin: 100px 20px;
+}
