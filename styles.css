@@ -1,3 +1,15 @@
+:root {
+    --background: #17192b;
+    --background-light: #2c2f42;
+    --table: #1f1f1f;
+    --text: #f5fbff;
+    --header: #f4bc7a;
+    --orange: #a66b3f;
+    --dark-orange: #5c381d;
+    --light-orange: #e38b43;
+    --aqua: #007bff;
+}
+
 .badeen-display-regular {
     font-family: "Badeen Display", system-ui;
     font-weight: 400;
@@ -8,34 +20,107 @@ body {
     /* Makes it so when you zoom out the table stays centered, but still to the left of the background */
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
 
     background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
     background-size: contain;
-    background-color: #17192b;
-    color: #f5fbff;
-
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    font-family: "Oswald", sans-serif;
+    background-color: var(--background);
 }
 
 .container {
     width: 900px;
     margin-right: 500px;
+    margin-top: 30px;
     border-collapse: collapse;
-    background-color: #1f1f1fff;
+    background-color: var(--table);
+    box-shadow: 0 0 20px black;
+}
+
+.nav-table {
+    width: 900px;
+    border-collapse: collapse;
+}
+
+.nav-table td {
+    width: 20%;
+    padding: 15px 8px;
+}
+
+.nav-table a {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0;
+
+    background-color: var(--background-light);
+    border: 2px solid var(--background);
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.nav-table a:hover {
+    background-image: linear-gradient(90deg, var(--dark-orange), var(--light-orange));
+    border-color: var(--orange);
+}
+
+.nav-table a:active {
+    transform: translateY(3px);
+}
+
+h1.home {
+    text-align: center;
+    color: var(--header);
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    margin: 1000px 30px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 td {
     padding: 0;
-    /* vertical-align: top; */
 }
 
-p {
-    font-size: 34px;
-    margin: 100px 20px;
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background-color: #e38b43;
+    border-radius: 50%;
+}
+
+.back-to-top img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+.back-to-top:hover {
+    background-color: #a66b3f;
 }
