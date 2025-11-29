@@ -3,7 +3,7 @@
     --background-light: #2c2f42;
     --table: #1f1f1f;
     --text: #f5fbff;
-    --header: #f4bc7a;
+    --text-orange: #f4bc7a;
     --orange: #a66b3f;
     --dark-orange: #5c381d;
     --light-orange: #e38b43;
@@ -41,6 +41,7 @@ body {
     width: 900px;
     margin-right: 500px;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-collapse: collapse;
     background-color: var(--table);
     box-shadow: 0 0 20px black;
@@ -50,6 +51,13 @@ p {
     font-size: 20px;
     font-weight: 300;
     margin: 10px 40px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-orange);
+    font-size: 30px;
+    margin: 0;
 }
 
 img {
@@ -103,8 +111,9 @@ td {
 
 h1.title {
     text-align: center;
-    color: var(--header);
+    color: var(--text-orange);
     font-size: 36px;
+    margin: 10px;
 }
 
 .oppenheimer {
@@ -117,19 +126,45 @@ h1.title {
 .card {
     width: 300px;
     padding: 30px 0;
+    position: relative;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1)
 }
 
 .card-img {
     width: 260px;
-    box-sizing: border-box;
     border-radius: 12px;
     border: 4px solid var(--background-light);
 }
 
+.card-desc {
+    position: absolute;
+    margin: 0 auto;
+    width: 262px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: linear-gradient(#2c2f4299 0%, #2c2f42ee 100%);
+    color: var(--text-orange);
+    border-radius: 8px;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card:hover .card-desc {
+    opacity: 1;
+    bottom: 33px;
+}
+
 .back-to-top {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 30px;
+    right: 30px;
     width: 60px;
     height: 60px;
     background-color: #e38b43;
