@@ -53,6 +53,15 @@ p {
     margin: 10px 40px;
 }
 
+q {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 30px;
+    border-top: 2px solid var(--orange);
+}
+
 h1 {
     text-align: center;
     color: var(--text-orange);
@@ -112,7 +121,7 @@ td {
     font-weight: 600;
     color: var(--text);
     text-decoration: none;
-    transition: 0.5s ease;
+    transition: .5s ease;
 }
 
 .nav-table a:hover {
@@ -144,7 +153,7 @@ h1.title {
     padding: 30px 0;
     position: relative;
     text-align: center;
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 
 .card:hover {
@@ -233,6 +242,32 @@ h1.title {
     border-radius: 20px;
     border: 4px solid var(--background-light);
     box-shadow: 0 0 30px var(--background);
+}
+
+.trinity-img {
+    width: 220px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 4px solid var(--background-light);
+    transition: .3s ease;
+}
+
+.trinity-img:hover {
+    transform: scale(1.05);
+}
+
+.trinity-ol {
+    padding-left: 60px;
+}
+
+.trinity-li {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.q-name {
+    text-align: right;
+    margin-bottom: 20px;
 }
 
 .back-to-top {
