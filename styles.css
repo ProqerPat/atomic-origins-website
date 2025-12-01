@@ -69,6 +69,13 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+    color: var(--text-orange);
+    font-size: 24px;
+    margin: 0;
+}
+
 strong {
     font-size: 120%;
     font-weight: 600;
@@ -268,6 +275,21 @@ h1.title {
 .q-name {
     text-align: right;
     margin-bottom: 20px;
+}
+
+.references-header {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--orange);
+    margin-bottom: 20px;
+}
+
+.references-li {
+    background-color: var(--background-light);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-right: 50px;
 }
 
 .back-to-top {
